@@ -43,12 +43,20 @@ section {
     height: 5em;
     background-color: var(--color1);
 }
-section img{
+.one{
     margin: 7em;
     z-index: 2;
     width: 10em;
     position: relative;
     bottom: 25em;
+    filter: blur(1.5em) brightness(50%);
+}
+.two{
+    z-index: 2;
+    width: 10em;
+    position: relative;
+    bottom: 32em;
+    right: 17.2em;
 }
 section::after {
     content: "";
