@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+/* Start Global Variables */
+:root{
+    --color: #831435;
+    --color1: #49182b;
+    --color2: #fff;
+    --color3:#000;
+    --color4:#ddd;
+}
+*{
+    font-family: 'Almarai', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    scroll-behavior: smooth;
+    overflow: overlay;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color4);
+    border-radius: 7px;
+}
+/* end Global Variables */
+/*start header*/
+header{
+    color: var(--color2);
+    padding: 2.5em;
+    text-align: right;
+    background-color: var(--color);
+    background-image: url("/img/pattern.png");
+    background-repeat: no-repeat;
+    font-size: 3em;
+}
+/*end header*/
+/*end section*/
+section {
+    height: 5em;
+    background-color: var(--color1);
+}
+section img{
+    margin: 7em;
+    z-index: 2;
+    width: 10em;
+    position: relative;
+    bottom: 25em;
+}
+section::after {
+    content: "";
+    width: 100%;
+    height: 22.5%;
+    position: absolute;
+    top: 25em;
+    right: 0;
+    background: var(--color2);
+    transform: skewY(5deg);
+}
+section::before {
+    content: '';
+    background: url('/img/qatar-word.png') no-repeat center center/30em;
+    position: absolute;
+    top: 30em;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    z-index: 1;
+}
+/*end section*/
+/*start main*/
+main{
+    padding-top: 10em;
+    margin-left: 21%;
+    width: 58%;
+}
+main p{
+    text-align: right;
+    font-size: 3em;
+}
+main hr{
+    text-align: center;
+}
+/*end main*/
+/*start aside*/
+aside {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 1em;
+    row-gap: 0.5em;
+}
+.Ksa{
+    font-size: 1em;
+}
+aside table {
+    font-size: 0.8em;
+    box-shadow: 0px 5px 25px 0px #d3d3d3;
+    border-collapse: collapse;
+    width: 25em;
+}
+aside img {
+    width: 1em;
+}
+caption {
+    padding: 0.5em;
+    color: var(--color2);
+    background-color: var(--color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+aside tr {
+    height: 2em;
+    border-bottom: 1px solid #d3d3d3;
+}
+aside tr:first-child {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+/*end aside*/
+/*start footer*/
+footer{
+    font-size: 3em;
+}
+footer div {
+    padding-top: 2em;
+    margin-left: 21%;
+    width: 58%;
+}
+footer p {
+    text-align: right;
+}
+footer td p{
+    font-size: 0.5em;
+    text-align: center;
+}
+footer hr{
+    text-align: center;
+}
+footer h3{
+    font-size: 0.5em;
+}
+footer table {
+    overflow: hidden;
+    border-radius: 75px 75px;
+    margin: auto;
+    text-align: center;
+    height: 3em;
+    width: 65%;
+    box-shadow: 0px 5px 25px 0px #d3d3d3;
+}
+footer img {
+    width: 1em;
+    border-radius: 50%;
+    border: 2px solid var(--color2);
+}
+footer td {
+    text-align: center;
+}
+footer td:first-child {
+    border-right: 5px solid var(--color1);
+    background-color: var(--color);
+    color: var(--color2);
+}
+footer td:last-child {
+    border-left: 5px solid var(--color1);
+    background-color: var(--color);
+    color: var(--color2);
+}
+footer footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1em;
+    color: var(--color2);
+    background-color: var(--color);
+}
+footer footer p{
+    text-align: center;
+}
+/*end footer*/
